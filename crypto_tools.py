@@ -30,6 +30,7 @@ def __init__(self):
 
 
 def get_socket_manager(self):
+# TODO: support retry mechanism
         return BinanceSocketManager(self.client)
 
 
