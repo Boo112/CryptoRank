@@ -33,3 +33,18 @@ def OpenFile(self, dirname, filename):
             self.ErrorDialog("Cannot read from file " + filename)
             return False
 
+
+def build_headers(self, headers: dict):
+        return {
+            **self.headers,
+            **headers
+        }
+
+
+def create(self, data=None):
+        if data is None:
+            data = {}
+        response = self.post(self.serialize(data))
+        print('response', response)
+        return self.populate(data=[response])
+
