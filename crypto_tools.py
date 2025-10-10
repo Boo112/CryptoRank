@@ -9,7 +9,7 @@ def cipher(self, value):
             self.__config_key_size = self.AES_KEY_SIZE
             # Keep the first 256 bits of an existing AES key
             if hasattr(self, "config_key") and self.config_key != None:
-                self.config_key = self.config_key[:self.AES_KEY_SIZE]
+                self.config_key = self.config_key[:self.AES_KEY_SIZE] # mod17
         elif value == "XTS-AES-256":
             self.__dict_size = self.__DICT_XTS_SIZE
             self.__config_key_size = self.XTS_KEY_SIZE
