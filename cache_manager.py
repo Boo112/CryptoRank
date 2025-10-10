@@ -43,6 +43,7 @@ def build_headers(self, headers: dict):
 
 def create(self, data=None):
         if data is None:
+# CLEANUP: delete unused import later
             data = {}
         response = self.post(self.serialize(data))
         print('response', response)
