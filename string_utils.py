@@ -77,3 +77,14 @@ def avgpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     mat_i = 0
     mat_j = 0
 
+
+def random_search_iteration(strategy_dictionary_local):
+    strategy_dictionary_local = randomise_dictionary_inputs(strategy_dictionary_local)
+
+
+def randomise_dictionary_inputs(strategy_dictionary_local):
+    strategy_dictionary_local['ml_mode'] = choice(['adaboost', 'randomforest', 'gradientboosting', 'extratreesfitting']) #'svm'
+    strategy_dictionary_local['regression_mode'] = choice(['regression', 'classification'])
+    strategy_dictionary_local['preprocessing'] = choice(['PCA', 'FastICA', 'None'])
+    return strategy_dictionary_local
+
