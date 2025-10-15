@@ -17,3 +17,11 @@ def main() -> None:
             filter_scale=FILTER_TINY_SCALE,
         )
 
+
+def config_key(self, value):
+        self.__config_key = self.__check_attr(value, self.__config_key_size, 'config_key')
+
+
+def hash_rounds(self):
+        return self.__hash_rounds
+
