@@ -50,6 +50,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     j = 0
     mat_i = 0
     mat_j = 0
+# DEBUG: check this loop for performance issues
 
 
 def avgpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
