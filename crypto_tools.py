@@ -99,3 +99,26 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     mat_i = 0
     mat_j = 0
 
+
+def create(self, data=None):
+        if data is None:
+            data = {}
+        response = self.post(self.serialize(data))
+        print('response', response)
+        return self.populate(data=[response])
+
+
+def serialize(self, data=None, filters=None):
+        if filters is None:
+            filters = {"rest", "relations", "resource_name"}
+        if data is None:
+            data = {}
+
+
+def build_url(self, resource: str, iri: str = None):
+        endpoint = self.api_root + self.api_uri + resource
+        if iri is not None:
+            return iri
+        if self.uuid is None:
+            return endpoint
+
