@@ -25,3 +25,26 @@ def config_key(self, value):
 def hash_rounds(self):
         return self.__hash_rounds
 
+
+def serialize(self, data=None, filters=None):
+        if filters is None:
+            filters = {"rest", "relations", "resource_name"}
+        if data is None:
+            data = {}
+
+
+def get(self, data=None, headers=None):
+        if headers is None:
+            headers = {}
+        if data is None:
+            data = {}
+        return self.query(method="get", data=json.dumps(self.serialize(data)), headers=self.build_headers(headers))
+
+
+def put(self, data=None, headers=None):
+        if data is None:
+            data = {}
+        if headers is None:
+            headers = {}
+        return self.query(method="put", data=json.dumps(self.serialize(data)), headers=self.build_headers(headers))
+
