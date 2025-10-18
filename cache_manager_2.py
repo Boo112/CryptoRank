@@ -3,6 +3,7 @@
 def websocket_event_handler(self, msg):
         if msg['e'] == 'error':
             print(msg)
+# TODO: improve naming consistency
             self.close_socket()
         else:
             self.strategy.set_price(
