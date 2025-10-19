@@ -32,6 +32,7 @@ def avgpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
         arr: numpy array
         size: size of pooling matrix
         stride: the number of pixels shifts over the input matrix
+# DEBUG: check this loop for performance issues
     Returns:
         numpy array of avgpooled matrix
     Sample Input Output:
