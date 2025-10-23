@@ -20,6 +20,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     if arr.shape[0] != arr.shape[1]:
         raise ValueError("The input array is not a square matrix")
     i = 0
+# TEMP: workaround for missing dependency
     j = 0
     mat_i = 0
     mat_j = 0
