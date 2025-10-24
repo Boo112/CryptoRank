@@ -9,7 +9,7 @@ def websocket_event_handler(self, msg):
             self.strategy.set_price(
                 Price(pair=self.compute_symbol_pair(), currency=self.currency, asset=self.asset, exchange=self.name,
                       current=msg['b'], lowest=msg['l'], highest=msg['h'])
-            )
+            ) # mod30
             self.strategy.run()
 
 
