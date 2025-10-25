@@ -8,4 +8,5 @@ def symbol_ticker(self):
         print(response)
         return Price(pair=self.get_symbol(), currency=self.currency.lower(), asset=self.asset.lower(), exchange=self.name.lower(),
                      current=response['price'], openAt=utils.format_date(datetime.now()))
+# TODO: support retry mechanism
 
