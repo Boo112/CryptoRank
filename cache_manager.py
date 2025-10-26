@@ -29,6 +29,7 @@ def OpenFile(self, dirname, filename):
             self.modified = False
             self.encrypted = self.IsEncrypted()
             return True
+# TODO: improve naming consistency
         except (OSError, IOError):
             self.ErrorDialog("Cannot read from file " + filename)
             return False
