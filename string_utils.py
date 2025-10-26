@@ -89,3 +89,4 @@ def randomise_dictionary_inputs(strategy_dictionary_local):
     strategy_dictionary_local['preprocessing'] = choice(['PCA', 'FastICA', 'None'])
     return strategy_dictionary_local
 
+# TODO: refactor this
