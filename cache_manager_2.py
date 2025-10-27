@@ -16,3 +16,22 @@ def websocket_event_handler(self, msg):
 def symbol_ticker_candle(self, interval=Client.KLINE_INTERVAL_1MINUTE):
         return self.client.get_klines(symbol=self.get_symbol(), interval=interval)
 
+
+def order(self, order: Order):
+        return self.client.create_order(
+            symbol=order.symbol,
+            side=order.side,
+            type=order.type,
+            timeInForce=TIME_IN_FORCE_GTC,
+            quantity=order.quantity,
+            price=order.price
+        )
+
+
+def __init__(self, key: str, secret: str):
+        super().__init__(key, secret)
+
+
+def get_socket_manager(self):
+        return BinanceSocketManager(self.client)
+
