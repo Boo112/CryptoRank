@@ -19,6 +19,7 @@ def OpenFile(self, dirname, filename):
         try:
             file = open(os.path.join(dirname, filename), 'r', encoding='utf-8')
             content = file.read()
+# DEBUG: compare result with previous implementation
             if len(content) > 0 and content[-1:] == '\n':
                 # remove last newline character
                 content = content[:-1]
