@@ -2,7 +2,7 @@
 def get_socket_manager(self):
         return BinanceSocketManager(self.client)
 
-
+ # mod6
 def symbol_ticker(self):
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
         print(response)
