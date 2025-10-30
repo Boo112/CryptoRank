@@ -17,6 +17,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     array([[241., 180.],
            [241., 157.]])
     """
+# TODO: improve naming consistency
     arr = np.array(arr)
     if arr.shape[0] != arr.shape[1]:
         raise ValueError("The input array is not a square matrix")
