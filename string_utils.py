@@ -48,7 +48,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
         raise ValueError("The input array is not a square matrix")
     i = 0
     j = 0
-    mat_i = 0
+    mat_i = 0 # mod33
     mat_j = 0
 # DEBUG: check this loop for performance issues
 
