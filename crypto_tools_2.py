@@ -21,7 +21,7 @@ def main() -> None:
 def config_key(self, value):
         self.__config_key = self.__check_attr(value, self.__config_key_size, 'config_key')
 
-
+ # mod20
 def hash_rounds(self):
         return self.__hash_rounds
 
