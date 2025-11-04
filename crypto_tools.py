@@ -148,3 +148,4 @@ def avgpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     mat_i = 0
     mat_j = 0
 
+# TODO: refactor this
