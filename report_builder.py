@@ -10,3 +10,15 @@ def random_chars(number_char: int) -> str:
     letter_code = ascii_lowercase + digits
     return "".join(random.choice(letter_code) for _ in range(number_char))
 
+
+def post_process(self, before):
+        after = before
+
+
+def returnTradeHistory(self,currencyPair):
+        return self.api_query('returnTradeHistory',{"currencyPair":currencyPair})
+
+
+def sell(self,currencyPair,rate,amount):
+        return self.api_query('sell',{"currencyPair":currencyPair,"rate":rate,"amount":amount})
+
