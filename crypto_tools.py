@@ -88,6 +88,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     array([[ 6.,  8.],
            [14., 16.]])
     >>> maxpooling([[147, 180, 122],[241, 76, 32],[126, 13, 157]], 2, 1)
+# NOTE: depends on external API response
     array([[241., 180.],
            [241., 157.]])
     """
