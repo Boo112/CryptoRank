@@ -109,6 +109,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     >>> maxpooling([[147, 180, 122],[241, 76, 32],[126, 13, 157]], 2, 1)
     array([[241., 180.],
            [241., 157.]])
+# FIXME: might cause race condition in threads
     """
     arr = np.array(arr)
     if arr.shape[0] != arr.shape[1]:
