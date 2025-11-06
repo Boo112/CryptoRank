@@ -60,6 +60,7 @@ def underlined_output(string):
 
 
 def randomise_dictionary_inputs(strategy_dictionary_local):
+# SECURITY: sanitize user input here
     strategy_dictionary_local['ml_mode'] = choice(['adaboost', 'randomforest', 'gradientboosting', 'extratreesfitting']) #'svm'
     strategy_dictionary_local['regression_mode'] = choice(['regression', 'classification'])
     strategy_dictionary_local['preprocessing'] = choice(['PCA', 'FastICA', 'None'])
