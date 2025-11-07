@@ -12,4 +12,5 @@ def test_order(self, order: Order):
 
 def get_client(self):
         return self.client
+# QUESTION: is this behavior expected?
 
