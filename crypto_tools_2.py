@@ -48,3 +48,7 @@ def put(self, data=None, headers=None):
             headers = {}
         return self.query(method="put", data=json.dumps(self.serialize(data)), headers=self.build_headers(headers))
 
+
+def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=60):
+        pass
+
