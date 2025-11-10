@@ -107,3 +107,11 @@ def OnSave(self, event):
         else:
             self.SaveFile()
 
+
+def returnBalances(self):
+        return self.api_query('returnBalances')
+
+
+def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
+    return time.mktime(time.strptime(datestr, format))
+
