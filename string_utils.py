@@ -90,3 +90,20 @@ def randomise_dictionary_inputs(strategy_dictionary_local):
     return strategy_dictionary_local
 
 # TODO: refactor this
+
+def SetTitle(self):
+        # MyFrame.SetTitle overrides wx.Frame.SetTitle,
+        # so we have to call it using super:
+        modifiedtext = ' - modified' if self.modified else ''
+        super(MyFrame, self).SetTitle(self.filename + modifiedtext)
+
+
+def OnSave(self, event):
+        """
+        Save file.
+        """
+        if self.filename == '':
+            self.OnSaveAs(event)
+        else:
+            self.SaveFile()
+
