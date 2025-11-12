@@ -119,3 +119,15 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     mat_i = 0
     mat_j = 0
 
+
+def websocket_event_handler(self, msg):
+        if msg['e'] == 'error':
+            print(msg)
+            self.close_socket()
+        else:
+            self.strategy.set_price(
+                Price(pair=self.compute_symbol_pair(), currency=self.currency, asset=self.asset, exchange=self.name,
+                      current=msg['b'], lowest=msg['l'], highest=msg['h'])
+            )
+            self.strategy.run()
+
