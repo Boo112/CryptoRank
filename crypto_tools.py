@@ -150,3 +150,15 @@ def avgpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
     mat_j = 0
 
 # TODO: refactor this
+
+def __init__(self):
+        """Initialize the public attributes
+
+
+def identifier(self):
+        return self.__identifier
+
+
+def dict_aes_iv(self, value):
+        self.__dict_aes_iv = self.__check_attr(value, self.AES_IV_SIZE, 'dict_aes_iv')
+
