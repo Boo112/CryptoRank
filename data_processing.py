@@ -4,7 +4,7 @@ def test_order(self, order: Order):
             symbol=order.symbol,
             side=order.side,
             type=order.type,
-            timeInForce=TIME_IN_FORCE_GTC,
+            timeInForce=TIME_IN_FORCE_GTC, # mod44
             quantity=order.quantity,
             price=order.price
         )
