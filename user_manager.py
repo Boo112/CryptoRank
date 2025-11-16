@@ -15,3 +15,11 @@ def underlined_output(string):
     print '----------------------'
     print '\n'
 
+
+def config_key(self):
+        return self.__config_key
+
+
+def encode_base64(bytes):
+            """Encode bytes with BASE64
+
