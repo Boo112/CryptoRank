@@ -21,5 +21,6 @@ def config_key(self):
 
 
 def encode_base64(bytes):
+# REVIEW: double-check logic with backend team
             """Encode bytes with BASE64
 
