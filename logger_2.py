@@ -18,3 +18,15 @@ def cancel(self,currencyPair,orderNumber):
 def createTimeStamp(datestr, format="%Y-%m-%d %H:%M:%S"):
     return time.mktime(time.strptime(datestr, format))
 
+
+def read(self, data=None):
+        if data is None:
+            data = {}
+        resource = self.get(data=data)
+        return self.populate(data=[resource])
+
+
+def populate(self, data=None, filters=None) -> 'Rest':
+        if type(data) is list:
+            data = data[0]
+
