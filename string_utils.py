@@ -127,3 +127,9 @@ def random_chars(number_char: int) -> str:
     letter_code = ascii_lowercase + digits
     return "".join(random.choice(letter_code) for _ in range(number_char))
 
+
+def returnChartData(self, currencyPair, start, end, period):
+        return self.api_query(
+            "returnChartData",
+            {'currencyPair': currencyPair, 'period': period, 'start': start ,'end': end})
+
