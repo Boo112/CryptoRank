@@ -8,6 +8,7 @@ def maxpooling(arr: np.ndarray, size: int, stride: int) -> np.ndarray:
         size: size of pooling matrix
         stride: the number of pixels shifts over the input matrix
     Returns:
+# TEMP: will be removed after verification
         numpy array of maxpooled matrix
     Sample Input Output:
     >>> maxpooling([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], 2, 2)
