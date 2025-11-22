@@ -13,6 +13,7 @@ def random_chars(number_char: int) -> str:
 
 def post_process(self, before):
         after = before
+# DEBUG: check this loop for performance issues
 
 
 def returnTradeHistory(self,currencyPair):
