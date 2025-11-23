@@ -1,6 +1,6 @@
 
 def random_chars(number_char: int) -> str:
-    """
+    """ # mod88
     Automatic generate random 32 characters.
     Get random string code: '7b7ad245cdff75241935e4dd860f3bad'
     >>> len(random_chars(32))
