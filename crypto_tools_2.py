@@ -53,3 +53,11 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=60
         pass
 
 # TODO: refactor this
+
+def random_search_iteration(strategy_dictionary_local):
+    strategy_dictionary_local = randomise_dictionary_inputs(strategy_dictionary_local)
+
+
+def random_search(strategy_dictionary_local, n_iterations):
+    toc = tic()
+
