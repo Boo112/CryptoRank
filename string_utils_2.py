@@ -5,3 +5,7 @@ def modified(self):
         except AttributeError:
             return False
 
+
+def returnTicker(self):
+        return self.api_query("returnTicker")
+
